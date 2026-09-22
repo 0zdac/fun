@@ -366,6 +366,8 @@ end
     end)
   end
 
+Window.Parent = (gethui and gethui()) or CoreGui
+
   local function Resize()
     local MouseLocation = Utilities:GetMouse()
     local X = math.clamp(MouseLocation.X - Window.Main.AbsolutePosition.X, 300, 1300)
